@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Best Android Development Course in India | JustAcademy</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Best Android Development Course in India | JustAcademy">
+    <meta name="description" content="Join the best Android development course in India offered by JustAcademy. Learn app development with Java, Kotlin, and Flutter. Perfect for beginners and aspiring Android developers.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://justacademy.in/android-development">
+    <meta property="og:title" content="Best Android Development Course in India | JustAcademy">
+    <meta property="og:description" content="Kickstart your Android developer journey with JustAcademy's industry-ready Android development course. Learn Kotlin, Java, and Flutter from experts.">
+    <meta property="og:image" content="https://justacademy.in/assets/android-course-banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://justacademy.in/android-development">
+    <meta property="twitter:title" content="Best Android Development Course in India | JustAcademy">
+    <meta property="twitter:description" content="Enroll in India's best Android development course at JustAcademy. Learn to build powerful Android apps with Java, Kotlin, and Flutter.">
+    <meta property="twitter:image" content="https://justacademy.in/assets/android-course-banner.jpg">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="best Android development course in India, Android app development course, JustAcademy Android course, learn Android in India, Kotlin course, Java Android course, Flutter training India, app development for beginners India">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #B51C72;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #B51C72;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            color: white;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800"><rect fill="%231e3c72" width="1000" height="800"/><circle fill="%232a5298" opacity="0.3" cx="200" cy="200" r="100"/><circle fill="%23B51C72" opacity="0.2" cx="800" cy="400" r="150"/></svg>');
+            background-size: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ffffff, #f8f9fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite alternate;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+            to { text-shadow: 0 0 30px rgba(255, 255, 255, 0.5); }
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #B51C72, #d63384);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(181, 28, 114, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(181, 28, 114, 0.4);
+            background: linear-gradient(45deg, #9d1860, #B51C72);
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        /* Course Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(181, 28, 114, 0.05) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-color: #B51C72;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #B51C72;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        /* Course Curriculum */
+        .curriculum {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 3rem;
+            margin: 4rem 0;
+            color: #2c3e50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .curriculum h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .curriculum-item {
+            background: rgba(181, 28, 114, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 4px solid #B51C72;
+            transition: all 0.3s ease;
+        }
+        
+        .curriculum-item:hover {
+            background: rgba(181, 28, 114, 0.1);
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(181, 28, 114, 0.1);
+        }
+        
+        .curriculum-item h4 {
+            color: #B51C72;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 2rem;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #B51C72;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 3rem;
+            margin: 4rem 0;
+            color: #2c3e50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial {
+            background: rgba(181, 28, 114, 0.05);
+            border-radius: 8px;
+            padding: 2rem;
+            position: relative;
+            border: 1px solid rgba(181, 28, 114, 0.1);
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: #B51C72;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            padding-top: 2rem;
+            color: #495057;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #B51C72;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: #B51C72;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            color: #ecf0f1;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: #B51C72;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #B51C72;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .curriculum-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #B51C72, #d63384);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(181, 28, 114, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(181, 28, 114, 0.4);
+        }
+        
+        /* Animation for scroll reveal */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="https://www.justacademy.co/" class="logo">Just Academy</a>
+            <ul class="nav-links">
+                <li><a href="https://www.justacademy.co/">Home</a></li>
+                <li><a href="https://www.justacademy.co/course-detail/android-app-development">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero scroll-reveal">
+            <h1>Master Android App Development</h1>
+            <p>Transform your career with Mumbai's most comprehensive Android development course. Learn Java, Kotlin, Android Studio, and build real-world applications with industry experts.</p>
+            <a href="https://www.justacademy.co/course-detail/android-app-development" class="cta-button">Enroll Now - Limited Seats!</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">📱</div>
+                <h3>Complete Mobile Development</h3>
+                <p>Master Android app development from basics to advanced concepts including UI/UX design, database integration, and API connectivity.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">👨‍💻</div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with 10+ years of Android development experience at top tech companies.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🏆</div>
+                <h3>Job Placement Assistance</h3>
+                <p>Get dedicated placement support with resume building, interview preparation, and direct connections to hiring partners.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🛠️</div>
+                <h3>Hands-on Projects</h3>
+                <p>Build 5+ real Android applications including e-commerce app, social media app, and productivity tools for your portfolio.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">⏰</div>
+                <h3>Flexible Learning</h3>
+                <p>Choose from weekday, weekend, or online batches that fit your schedule with lifetime access to course materials.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🏅</div>
+                <h3>Industry Certification</h3>
+                <p>Receive recognized certification upon completion and showcase your skills to potential employers worldwide.</p>
+            </div>
+        </section>
+
+        <section class="stats scroll-reveal">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Students Trained</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Placement Rate</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4.9/5</span>
+                <span class="stat-label">Student Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Hiring Partners</span>
+            </div>
+        </section>
+
+        <section class="curriculum scroll-reveal">
+            <h2>Complete Course Curriculum</h2>
+            <div class="curriculum-grid">
+                <div class="curriculum-item">
+                    <h4>Module 1: Android Fundamentals</h4>
+                    <p>Android architecture, development environment setup, Android Studio IDE, project structure, and first app creation.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 2: Java & Kotlin Programming</h4>
+                    <p>Core programming concepts, OOP principles, Java to Kotlin migration, and modern Android development practices.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 3: UI/UX Design</h4>
+                    <p>Layout design, Material Design principles, responsive layouts, animations, and user interface best practices.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 4: App Components</h4>
+                    <p>Activities, fragments, services, broadcast receivers, content providers, and intent-based communication.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 5: Data Management</h4>
+                    <p>SQLite database, Room persistence library, SharedPreferences, file handling, and cloud storage integration.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 6: Networking & APIs</h4>
+                    <p>REST API integration, HTTP networking, JSON parsing, Retrofit library, and third-party API consumption.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 7: Advanced Features</h4>
+                    <p>Camera integration, GPS/location services, push notifications, sensors, and device hardware access.</p>
+                </div>
+                <div class="curriculum-item">
+                    <h4>Module 8: App Publishing</h4>
+                    <p>Google Play Store publishing, app signing, monetization strategies, analytics integration, and app maintenance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials scroll-reveal">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">Just Academy's Android course transformed my career completely. The hands-on approach and real projects helped me land a job at a top tech company within 2 months of completion.</p>
+                    <p class="testimonial-author">- Priya Sharma, Android Developer at TCS</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">The instructors are amazing! They explain complex concepts in simple terms and provide excellent placement support. I'm now working as a mobile app developer in Mumbai.</p>
+                    <p class="testimonial-author">- Rahul Patel, Mobile App Developer</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Best investment I made for my career. The course curriculum is up-to-date with industry standards, and the practical projects gave me confidence to start freelancing.</p>
+                    <p class="testimonial-author">- Sneha Gupta, Freelance Developer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="https://www.justacademy.co/">Home</a>
+                    <a href="https://www.justacademy.co/course-detail/android-app-development">Android Course</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Mumbai, Maharashtra, India</p>
+                    <p>📞 +91-XXXX-XXXX</p>
+                    <p>✉️ info@justacademy.co</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Other Courses</h3>
+                    <a href="#">Web Development</a>
+                    <a href="#">Data Science</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Python Programming</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#">📘</a>
+                <a href="#">🐦</a>
+                <a href="#">📷</a>
+                <a href="#">💼</a>
+            </div>
+            <p>&copy; 2025 Just Academy. All rights reserved. | Mumbai's Premier Android Development Training Institute</p>
+        </div>
+    </footer>
+
+    <button class="fab" onclick="window.location.href='https://www.justacademy.co/course-detail/android-app-development'">
+        📞
+    </button>
+
+    <script>
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add floating animation to feature cards
+        document.querySelectorAll('.feature-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.2}s`;
+        });
+    </script>
+</body>
+</html>
